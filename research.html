@@ -75,13 +75,46 @@
             margin-bottom: 5px;
         }
 
-        .paper-links {
+        .paper-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 3px;
             font-size: 15px;
         }
 
-        .paper-links a {
+        .paper-actions a {
             color: #333333;
             text-decoration: underline;
+        }
+
+        .abstract-toggle {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #333333;
+            font-family: inherit;
+            font-size: 15px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .abstract-text {
+            display: none;
+            margin-top: 14px;
+            max-width: 820px;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #333333;
+        }
+
+        .abstract-text.open {
+            display: block;
+        }
+
+        .abstract-text p {
+            margin-top: 0;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -110,6 +143,10 @@
             .paper {
                 max-width: 100%;
             }
+
+            .abstract-text {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -126,9 +163,12 @@
 
         <h1>Research</h1>
 
+
         <h2>Working Papers</h2>
 
+
         <div class="paper">
+
             <div class="paper-title">
                 Narrowly Rational
             </div>
@@ -141,14 +181,43 @@
                 Journal of Economic Theory, Revise &amp; Resubmit
             </div>
 
-            <div class="paper-links">
+            <div class="paper-actions">
                 <a href="https://www.dropbox.com/scl/fi/13rfon6i8ygrxwqwb3tgt/MYZ-Narrowly-rational.pdf?dl=0&rlkey=qnhrr99ug86lkloak7tc9f26y"
                    target="_blank">Paper</a>
+
+                <button class="abstract-toggle"
+                        onclick="toggleAbstract(this)"
+                        aria-expanded="false">
+                    Abstract
+                </button>
             </div>
+
+            <div class="abstract-text">
+                <p>
+                    We examine whether choice behavior can be rationalized across settings.
+                    In an experiment, we compare portfolio allocations between two equiprobable
+                    Arrow securities in one setting, and between one safe asset and one risky asset,
+                    which delivers either a positive payoff or nothing, in another setting.
+                    We find that subjects are narrowly rational; that is, their choice data are
+                    internally consistent within each setting but inconsistent across settings.
+                </p>
+
+                <p>
+                    We observe that a diversification heuristic—the tendency to choose allocation
+                    at the midpoint of the given budget line—may underpin the observed inconsistency.
+                    We explore the underlying mechanisms in two additional experiments and show that
+                    the inconsistency across settings can be reduced by framing the two settings
+                    similarly but not by further decreasing the likelihood of the securities to a
+                    low level. Our study contributes to the literature on revealed preference
+                    analysis and heuristic-based decision-making.
+                </p>
+            </div>
+
         </div>
 
 
         <div class="paper">
+
             <div class="paper-title">
                 Revealed Preference Heterogeneity
             </div>
@@ -161,14 +230,37 @@
                 Management Science, Reject &amp; Resubmit
             </div>
 
-            <div class="paper-links">
+            <div class="paper-actions">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3963953"
                    target="_blank">Paper</a>
+
+                <button class="abstract-toggle"
+                        onclick="toggleAbstract(this)"
+                        aria-expanded="false">
+                    Abstract
+                </button>
             </div>
+
+            <div class="abstract-text">
+                <p>
+                    This study proposes a nonparametric revealed preference test to measure
+                    preference heterogeneity. Our method is assumption-free and applicable to
+                    any choice environment with revealed preference features. We develop two
+                    measures of preference heterogeneity at both the individual and group levels.
+                    We apply the method to test the much-debated greater male variability
+                    hypothesis in risk and social preferences using representative samples from
+                    the Netherlands and United States. Results indicate significantly greater
+                    male heterogeneity in risk preferences, but not in social preferences.
+                    Our study highlights the potential of the revealed preference approach as
+                    a powerful tool to understand heterogeneity.
+                </p>
+            </div>
+
         </div>
 
 
         <div class="paper">
+
             <div class="paper-title">
                 Political Identity and Conjunction Fallacy:
                 Experimental Evidence from the 2024 U.S. Presidential Election
@@ -178,14 +270,37 @@
                 with Bin Miao, Ziyu Zhang, and Songfa Zhong
             </div>
 
-            <div class="paper-links">
+            <div class="paper-actions">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6005834"
                    target="_blank">Paper</a>
+
+                <button class="abstract-toggle"
+                        onclick="toggleAbstract(this)"
+                        aria-expanded="false">
+                    Abstract
+                </button>
             </div>
+
+            <div class="abstract-text">
+                <p>
+                    In the context of the 2024 U.S. presidential election, experimental
+                    participants evaluate lotteries based on electoral outcomes (Trump or Harris
+                    winning), economic outcomes (improvement or decline), and the conjunctions
+                    of these outcomes. We document a conjunction fallacy in choices: participants
+                    value lotteries on conjunctive events more than single events. This pattern
+                    is stronger when conjunctive outcomes are congruent with participants'
+                    partisan identities—for example, a Harris victory combined with improved
+                    economic condition for Democrats—than when they are incongruent. Our results
+                    challenge models that satisfy dominance and point to preference-based
+                    explanations encompassing the source and the valence of uncertainty.
+                </p>
+            </div>
+
         </div>
 
 
         <div class="paper">
+
             <div class="paper-title">
                 Social Identity and Human-AI Task Allocation
             </div>
@@ -194,16 +309,40 @@
                 with Yiting Chen and You Shan
             </div>
 
-            <div class="paper-links">
+            <div class="paper-actions">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6835838"
                    target="_blank">Paper</a>
+
+                <button class="abstract-toggle"
+                        onclick="toggleAbstract(this)"
+                        aria-expanded="false">
+                    Abstract
+                </button>
             </div>
+
+            <div class="abstract-text">
+                <p>
+                    We extend social identity theory to study human-AI trade-offs in hiring
+                    contexts. In a baseline experiment, representative U.S. participants allocate
+                    tasks between a human worker and either another human, ChatGPT, or the foreign
+                    model DeepSeek, with explicitly varied productivity. On average, people incur
+                    costs to under-allocate tasks to AI, particularly DeepSeek. Two additional
+                    experiments, inducing identities on workers via minimal-group and political
+                    affiliations, reveal a hierarchy: in-group humans receive the most, followed
+                    comparably by out-group humans and in-group AI, and out-group AI receives the
+                    fewest. Individual perceived social distance to AI and groupy tendency jointly
+                    shape the task allocation decisions.
+                </p>
+            </div>
+
         </div>
 
 
         <h2>Works in Progress</h2>
 
+
         <div class="paper">
+
             <div class="paper-title">
                 Putting Longshot Preferences to Work in the Field
             </div>
@@ -211,10 +350,12 @@
             <div class="coauthors">
                 with Yiting Chen, Bin Miao, and Songfa Zhong
             </div>
+
         </div>
 
 
         <div class="paper">
+
             <div class="paper-title">
                 Measuring Rationality under Mental Illness
             </div>
@@ -222,6 +363,7 @@
             <div class="coauthors">
                 with Qiang Shen and Songfa Zhong
             </div>
+
         </div>
 
 
@@ -230,6 +372,23 @@
         </footer>
 
     </div>
+
+
+    <script>
+        function toggleAbstract(button) {
+
+            const paper = button.closest(".paper");
+            const abstract = paper.querySelector(".abstract-text");
+
+            const isOpen = abstract.classList.toggle("open");
+
+            button.textContent = isOpen
+                ? "Abstract ▲"
+                : "Abstract";
+
+            button.setAttribute("aria-expanded", isOpen);
+        }
+    </script>
 
 </body>
 

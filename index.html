@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,11 @@
             line-height: 1.6;
         }
 
-.container {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 40px 28px 80px;
-}
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 40px 28px 80px;
+        }
 
         nav {
             display: flex;
@@ -38,36 +39,37 @@
             text-decoration: underline;
         }
 
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 65px;
-    margin-bottom: 65px;
-}
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 65px;
+        }
 
-.photo {
-    width: 340px;
-    height: auto;
-    object-fit: cover;
-}
+        .photo {
+            width: 420px;
+            height: auto;
+            object-fit: cover;
+        }
 
         .intro-text {
             padding-top: 8px;
         }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    margin: 0 0 14px;
-}
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 500;
+            margin: 0 0 14px;
+            line-height: 1.25;
+        }
 
-.chinese-name {
-    font-size: 25px;
-    font-weight: 400;
-    margin-left: 12px;
-    color: #555555;
-}
+        .chinese-name {
+            font-size: 25px;
+            font-weight: 400;
+            margin-left: 12px;
+            color: #555555;
+        }
 
         .position {
             font-size: 17px;
@@ -79,6 +81,10 @@ h1 {
             margin-bottom: 22px;
         }
 
+        .links {
+            font-size: 17px;
+        }
+
         .links a {
             color: #333333;
             text-decoration: underline;
@@ -87,14 +93,15 @@ h1 {
 
         section {
             margin-top: 45px;
+            max-width: 850px;
         }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 18px;
-}
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
 
         p {
             font-size: 16px;
@@ -110,6 +117,7 @@ h2 {
         }
 
         @media (max-width: 700px) {
+
             .container {
                 padding: 25px 20px 60px;
             }
@@ -121,15 +129,25 @@ h2 {
 
             .intro {
                 flex-direction: column;
+                align-items: flex-start;
                 gap: 28px;
             }
 
             .photo {
-                width: 200px;
+                width: 100%;
+                max-width: 420px;
             }
 
             h1 {
                 font-size: 32px;
+            }
+
+            .chinese-name {
+                font-size: 21px;
+            }
+
+            section {
+                max-width: 100%;
             }
         }
     </style>
@@ -137,58 +155,61 @@ h2 {
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Research</a>
-        <a href="cv.pdf" target="_blank">CV</a>
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Research</a>
+            <a href="cv.pdf" target="_blank">CV</a>
+        </nav>
 
-    <div class="intro">
+        <div class="intro">
 
-        <img src="photo.jpg" alt="Shuangyu Yang" class="photo">
+            <img src="photo.jpg" alt="Shuangyu Yang" class="photo">
 
-        <div class="intro-text">
+            <div class="intro-text">
 
-            <h1>
-                Shuangyu Yang
-                <span class="chinese-name">杨双瑜</span>
-            </h1>
+                <h1>
+                    Shuangyu Yang
+                    <span class="chinese-name">杨双瑜</span>
+                </h1>
 
-            <div class="position">
-                Assistant Professor
-            </div>
+                <div class="position">
+                    Assistant Professor
+                </div>
 
-            <div class="institution">
-                Institute for Economic and Social Research<br>
-                Jinan University
-            </div>
+                <div class="institution">
+                    Institute for Economic and Social Research<br>
+                    Jinan University
+                </div>
 
-            <div class="links">
-                <a href="cv.pdf" target="_blank">CV</a>
-                <a href="mailto:shuangyuyang929@gmail.com">Email</a>
+                <div class="links">
+                    <a href="cv.pdf" target="_blank">CV</a>
+                    <a href="mailto:shuangyuyang929@gmail.com">Email</a>
+                </div>
+
             </div>
 
         </div>
 
+        <section>
+            <h2>About</h2>
+
+            <p>
+                I joined Jinan University (Guangzhou, China) as an Assistant Professor
+                at the Institute for Economic and Social Research in August 2023.
+                I received my Ph.D. in economics from the National University of Singapore.
+                My research interests are decision-making under uncertainty and bounded rationality,
+                and more generally behavioral and experimental economics.
+            </p>
+        </section>
+
+        <footer>
+            © Shuangyu Yang
+        </footer>
+
     </div>
 
-    <section>
-        <h2>About</h2>
-
-        <p>
-            I joined Jinan University (Guangzhou, China) as an assistant professor at the Institute for Economic and Social Research since August 2023. ​​
-            I received my Ph.D. in economics from the National University of Singapore. My research interests are decision making under uncertainty 
-            and bounded rationality, and more generally behavioral and experimental economics.
-        </p>
-    </section>
-
-    <footer>
-        © Shuangyu Yang
-    </footer>
-
-</div>
-
 </body>
+
 </html>

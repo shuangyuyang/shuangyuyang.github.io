@@ -1,20 +1,198 @@
-index.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shuangyu Yang</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 28px 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 28px;
+            margin-bottom: 70px;
+            font-size: 15px;
+        }
+
+        nav a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 55px;
+            margin-bottom: 70px;
+        }
+
+        .photo {
+            width: 230px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .intro-text {
+            padding-top: 8px;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 38px;
+            font-weight: normal;
+            margin: 0 0 10px;
+        }
+
+        .chinese-name {
+            font-size: 20px;
+            font-weight: normal;
+            margin-left: 8px;
+            color: #555555;
+        }
+
+        .position {
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        .institution {
+            font-size: 16px;
+            margin-bottom: 22px;
+        }
+
+        .links a {
+            color: #333333;
+            text-decoration: underline;
+            margin-right: 18px;
+        }
+
+        section {
+            margin-top: 45px;
+        }
+
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+            font-size: 13px;
+            color: #777777;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 25px 20px 60px;
+            }
+
+            nav {
+                justify-content: flex-start;
+                margin-bottom: 40px;
+            }
+
+            .intro {
+                flex-direction: column;
+                gap: 28px;
+            }
+
+            .photo {
+                width: 200px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Shuangyu Yang</h1>
 
-    <p>
-        Assistant Professor<br>
-        Institute for Economic and Social Research<br>
-        Jinan University
-    </p>
+<div class="container">
 
-    <p>Welcome to my academic website.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Research</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+    </nav>
+
+    <div class="intro">
+
+        <img src="photo.jpg" alt="Shuangyu Yang" class="photo">
+
+        <div class="intro-text">
+
+            <h1>
+                Shuangyu Yang
+                <span class="chinese-name">杨双瑜</span>
+            </h1>
+
+            <div class="position">
+                Assistant Professor
+            </div>
+
+            <div class="institution">
+                Institute for Economic and Social Research<br>
+                Jinan University
+            </div>
+
+            <div class="links">
+                <a href="cv.pdf" target="_blank">CV</a>
+                <a href="mailto:shuangyuyang929@gmail.com">Email</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section>
+        <h2>About</h2>
+
+        <p>
+            I am an Assistant Professor at the Institute for Economic and
+            Social Research, Jinan University.
+        </p>
+
+        <p>
+            My research interests are in behavioral economics and
+            experimental economics.
+        </p>
+    </section>
+
+    <footer>
+        © Shuangyu Yang
+    </footer>
+
+</div>
+
 </body>
 </html>
